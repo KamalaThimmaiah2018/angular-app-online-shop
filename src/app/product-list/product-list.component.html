@@ -1,5 +1,7 @@
 <h2>Products</h2>
-
+<!--a [ngForOf]="$products"> </a-->
+<li *ngFor="let item of products; index as i; trackBy: trackByFn">
+  {{item.name}}</li>
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.
